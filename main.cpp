@@ -6,13 +6,13 @@ using namespace std;
 
 int main()
 {
-  Sculptor projeto(50, 50, 50); //cria a tela 
-  projeto.setColor(100, 100, 29, 0);
-  projeto.putBox(0, 30, 0, 30, 0, 30); //corpo da garrafa
-  projeto.putBox(10, 20, 30, 35, 10, 20); //parte de cima da carrafa
-  projeto.setColor(1,0,1,1);
-  projeto.putBox(10, 29, 10, 29, 10, 29);
+  Sculptor projeto(100, 100, 100); //cria a tela 
+  projeto.setColor(100, 100, 100, 1);
+  projeto.putBox(35, 75, 35, 75, 35, 75); //corpo do boneco 
+  projeto.putBox(35, 45, 15, 35, 35, 45); //pernas do boneco
+  projeto.putBox(65, 75, 15, 35, 35, 75);
   projeto.writeOFF((char*)"write.off");
+  
   
    // Sculptor projeto(100,100,100); //crio a área a ser utilizada 
     //projeto.setColor(720, 0, 170, 1); //cor do corpinho
